@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LQjPBBA3UW/dEpI1k2Pwid180KqCo7htQbu0yrcD4+GKSIMHGDtYZ713dnpwVCeTlDn0RpJ8Q2XQaqjKqvfUyw==",
+  "dgSpecHash": "pniXvkVO8sLTgIXWW2yxiXxtY2rnuouPJLIoGm/oqTCfapZ4zXR7vRIXf7Zn1KAiDauSaPNMo8m5RFxe2LoQ1g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Bulky\\Bulky.Utility\\Bulky.Utility.csproj",
+  "projectFilePath": "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Web-Bulky-MVC\\Bulky.Utility\\Bulky.Utility.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

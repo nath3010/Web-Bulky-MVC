@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Bulky\\Bulky.Models\\Bulky.Models.csproj": {}
+    "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Web-Bulky-MVC\\Bulky.Models\\Bulky.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Bulky\\Bulky.Models\\Bulky.Models.csproj": {
+    "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Web-Bulky-MVC\\Bulky.Models\\Bulky.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Bulky\\Bulky.Models\\Bulky.Models.csproj",
+        "projectUniqueName": "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Web-Bulky-MVC\\Bulky.Models\\Bulky.Models.csproj",
         "projectName": "Bulky.Models",
-        "projectPath": "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Bulky\\Bulky.Models\\Bulky.Models.csproj",
+        "projectPath": "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Web-Bulky-MVC\\Bulky.Models\\Bulky.Models.csproj",
         "packagesPath": "C:\\Users\\natha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Bulky\\Bulky.Models\\obj\\",
+        "outputPath": "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Web-Bulky-MVC\\Bulky.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\natha\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Bulky\\Bulky.Utility\\Bulky.Utility.csproj": {}
+    "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Web-Bulky-MVC\\Bulky.Utility\\Bulky.Utility.csproj": {}
   },
   "projects": {
-    "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Bulky\\Bulky.Utility\\Bulky.Utility.csproj": {
+    "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Web-Bulky-MVC\\Bulky.Utility\\Bulky.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Bulky\\Bulky.Utility\\Bulky.Utility.csproj",
+        "projectUniqueName": "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Web-Bulky-MVC\\Bulky.Utility\\Bulky.Utility.csproj",
         "projectName": "Bulky.Utility",
-        "projectPath": "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Bulky\\Bulky.Utility\\Bulky.Utility.csproj",
+        "projectPath": "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Web-Bulky-MVC\\Bulky.Utility\\Bulky.Utility.csproj",
         "packagesPath": "C:\\Users\\natha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Bulky\\Bulky.Utility\\obj\\",
+        "outputPath": "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Web-Bulky-MVC\\Bulky.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\natha\\AppData\\Roaming\\NuGet\\NuGet.Config",

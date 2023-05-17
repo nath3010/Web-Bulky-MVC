@@ -5,12 +5,11 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using Bulky.DataAccess.Repository.IRepository;
-using Bulky.DataAcess.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace Bulky.DataAccess.Repository
 {
-	public class Repository<T> : IRepository<T> where T : class
+    public class Repository<T> : IRepository<T> where T : class
 	{
 		private readonly ApplicationDbContext _db;
 		internal DbSet<T> dbSet;
