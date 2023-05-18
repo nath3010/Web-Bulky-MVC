@@ -560,3 +560,6 @@ C:\Users\natha\OneDrive\Documentos\AprendendoAspNet\Web-Bulky-MVC\BulkyWeb\obj\D
 C:\Users\natha\OneDrive\Documentos\AprendendoAspNet\Web-Bulky-MVC\BulkyWeb\obj\Debug\net7.0\BulkyWeb.csproj.CopyComplete
 C:\Users\natha\OneDrive\Documentos\AprendendoAspNet\Web-Bulky-MVC\BulkyWeb\obj\Debug\net7.0\BulkyWeb.genruntimeconfig.cache
 C:\Users\natha\OneDrive\Documentos\AprendendoAspNet\Web-Bulky-MVC\BulkyWeb\obj\Debug\net7.0\ref\BulkyWeb.dll
+C:\Users\natha\OneDrive\Documentos\AprendendoAspNet\Web-Bulky-MVC\BulkyWeb\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\natha\OneDrive\Documentos\AprendendoAspNet\Web-Bulky-MVC\BulkyWeb\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+C:\Users\natha\OneDrive\Documentos\AprendendoAspNet\Web-Bulky-MVC\BulkyWeb\obj\Debug\net7.0\BulkyWeb.MvcApplicationPartsAssemblyInfo.cs

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -44,8 +45,9 @@ namespace Bulky.Models
 		//add Category Relation
         public int CategoryId { get; set; }
 		[ForeignKey("CategoryId")]
-        public Category Category { get; set; }
-
-        public string ImgUrl { get; set; }
+		[ValidateNever]
+		public Category Category { get; set; }
+		[ValidateNever]
+		public string ImgUrl { get; set; }
     }
 }
