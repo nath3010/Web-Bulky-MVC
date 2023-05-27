@@ -11,6 +11,8 @@
 	<div class="card-body p-4">
 		<form method="post" class="row" enctype="multipart/form-data">
 			<input asp-for="Product.Id" hidden />
+			@*TO PASS THE OLD URL IN THE FORM TO  DELETE IMG*@
+			<input asp-for="Product.ImgUrl" hidden/>
 			<div class="row">
 				<div class="col-10">
 					<div class="border p-3">

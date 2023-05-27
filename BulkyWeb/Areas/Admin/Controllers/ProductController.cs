@@ -21,7 +21,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
         }
         public IActionResult Index()
 		{
-			List<Product> objproductsList = _unitOfWork.Product.GetAll().ToList();
+			List<Product> objproductsList = _unitOfWork.Product.GetAll(includeProperties:"Category").ToList();
 
 			return View(objproductsList);
 		}
@@ -47,6 +47,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
 				CategoryList = CategoryList,
 				Product = new Product()
 			};
+
 			if(id ==  null ||  id == 0)
 			{
 				//create
@@ -73,14 +74,35 @@ namespace BulkyWeb.Areas.Admin.Controllers
 					string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
 					string productPath = Path.Combine(wwwRootPath, @"images\product");
 
+					if (!string.IsNullOrEmpty(productVM.Product.ImgUrl))
+					{
+						//delete old img
+						var oldImagePath = Path.Combine(wwwRootPath, productVM.Product.ImgUrl.TrimStart('\\'));
+						if (System.IO.File.Exists(oldImagePath))
+						{
+							System.IO.File.Delete(oldImagePath); 
+						}
+					}
+
 					using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
 					{
 						file.CopyTo(fileStream);
 					}
 
 					productVM.Product.ImgUrl = @"\images\product\" + fileName;
+					
 				}
-				_unitOfWork.Product.Add(productVM.Product);
+
+				//IF ID DONT EXIST CREATE
+				if(productVM.Product.Id == 0) 
+				{
+					_unitOfWork.Product.Add(productVM.Product);
+				}
+				//IF ID  EXIST UPDATE
+				else
+				{
+					_unitOfWork.Product.Update(productVM.Product);
+				}
 				_unitOfWork.Save();
 				TempData["success"] = "Product created successfully";
 
@@ -135,6 +157,13 @@ namespace BulkyWeb.Areas.Admin.Controllers
 			return RedirectToAction("Index");
 		}
 
-
+		#region API CALLS
+		[HttpGet]
+		public IActionResult GetAll() 
+		{
+			List<Product> objproductsList = _unitOfWork.Product.GetAll(includeProperties: "Category").ToList();
+			return Json(new { data = objproductsList });
+		}
+		#endregion
 	}
 }
