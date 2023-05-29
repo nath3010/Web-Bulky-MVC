@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vrEfT69LYJtxrjMLkxrFrFnTyUx7cBUWLLCKJOyPwDU=",
+  "Hash": "XFwKIc9NOwSwSrpbxxBQzbCZs47oeU21xRdVXW40k0o=",
   "Source": "BulkyWeb",
   "BasePath": "_content/BulkyWeb",
   "Mode": "Default",
@@ -85,12 +85,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Web-Bulky-MVC\\BulkyWeb\\wwwroot\\images\\product\\7c9573fc-0159-4d4d-84f9-c58a541a3844.jpg",
+      "Identity": "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Web-Bulky-MVC\\BulkyWeb\\wwwroot\\js\\product.js",
       "SourceId": "BulkyWeb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Web-Bulky-MVC\\BulkyWeb\\wwwroot\\",
       "BasePath": "_content/BulkyWeb",
-      "RelativePath": "images/product/7c9573fc-0159-4d4d-84f9-c58a541a3844.jpg",
+      "RelativePath": "js/product.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -99,7 +99,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\7c9573fc-0159-4d4d-84f9-c58a541a3844.jpg"
+      "OriginalItemSpec": "wwwroot\\js\\product.js"
     },
     {
       "Identity": "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Web-Bulky-MVC\\BulkyWeb\\wwwroot\\js\\site.js",

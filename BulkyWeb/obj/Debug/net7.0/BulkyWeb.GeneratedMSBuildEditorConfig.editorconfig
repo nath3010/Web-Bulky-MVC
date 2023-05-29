@@ -20,8 +20,8 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/natha/OneDrive/Documentos/AprendendoAspNet/Web-Bulky-MVC/BulkyWeb/Areas/Admin/Views/Category/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcRGVsZXRlLmNzaHRtbA==
+[C:/Users/natha/OneDrive/Documentos/AprendendoAspNet/Web-Bulky-MVC/BulkyWeb/Areas/Admin/Views/Category/DeleteOld.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcRGVsZXRlT2xkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/natha/OneDrive/Documentos/AprendendoAspNet/Web-Bulky-MVC/BulkyWeb/Areas/Admin/Views/Category/Edit.cshtml]

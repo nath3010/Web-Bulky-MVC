@@ -18,22 +18,19 @@
 			</div>
 		</div>
 
-		<table class="table table-bordered table-striped">
+		<table id="tblData" class="table table-bordered table-striped" style="width:100%">
 			<thead>
 				<tr>
 					<th>Product Name</th>
 					<th>Author</th>
 					<th>ISBN</th>
 					<th>Category</th>
-					<th>List Price</th>
-					<th>Price for 1-50</th>
-					<th>Price for 50+</th>
-					<th>Price for 100+</th>
+					<th>Price</th>
 					<th></th>
 				</tr>
 			</thead>
 
-			<tbody>
+@*			<tbody>
 				@foreach (var obj in Model.OrderBy(u => u.Title))
 				{
 					<tr>
@@ -57,7 +54,11 @@
 						</td>
 					</tr>
 				}
-			</tbody>
+			</tbody>*@
 		</table>
 	</div>
 </div>
+
+@section Scripts{
+	<script src="~/js/product.js"></script>
+}

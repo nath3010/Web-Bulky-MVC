@@ -3,6 +3,7 @@ using Bulky.Models;
 using Bulky.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.DotNet.Scaffolding.Shared.Messaging;
 using System.Collections.Generic;
 
 namespace BulkyWeb.Areas.Admin.Controllers
@@ -123,39 +124,39 @@ namespace BulkyWeb.Areas.Admin.Controllers
 	
 
 
-		public IActionResult Delete(int id) 
-		{
-			if (id == null || id == 0)
-			{
-				return NotFound();
-			}
+		//public IActionResult Delete(int id) 
+		//{
+		//	if (id == null || id == 0)
+		//	{
+		//		return NotFound();
+		//	}
 
-			Product? productDb = _unitOfWork.Product.Get(u => u.Id == id);
+		//	Product? productDb = _unitOfWork.Product.Get(u => u.Id == id);
 
-			if (productDb == null)
-			{
-				return NotFound();
-			}
-			return View(productDb);
-		}
+		//	if (productDb == null)
+		//	{
+		//		return NotFound();
+		//	}
+		//	return View(productDb);
+		//}
 
-		[HttpPost, ActionName("Delete")]
-		public IActionResult DeletePOST(int? id)
-		{
-			Product? obj = _unitOfWork.Product.Get(u =>u.Id == id);
+		//[HttpPost, ActionName("Delete")]
+		//public IActionResult DeletePOST(int? id)
+		//{
+		//	Product? obj = _unitOfWork.Product.Get(u =>u.Id == id);
 
-			if(obj == null)
-			{
-				return NotFound();
-			}
+		//	if(obj == null)
+		//	{
+		//		return NotFound();
+		//	}
 
-			_unitOfWork.Product.Delete(obj);
-			_unitOfWork.Save();
+		//	_unitOfWork.Product.Delete(obj);
+		//	_unitOfWork.Save();
 
-			TempData["success"] = "Product deleted successfully";
+		//	TempData["success"] = "Product deleted successfully";
 
-			return RedirectToAction("Index");
-		}
+		//	return RedirectToAction("Index");
+		//}
 
 		#region API CALLS
 		[HttpGet]
@@ -164,6 +165,31 @@ namespace BulkyWeb.Areas.Admin.Controllers
 			List<Product> objproductsList = _unitOfWork.Product.GetAll(includeProperties: "Category").ToList();
 			return Json(new { data = objproductsList });
 		}
-		#endregion
+		[HttpDelete]
+		public IActionResult Delete(int? id)
+		{
+			var productToBeDeleted = _unitOfWork.Product.Get(u => u.Id == id);
+			if (productToBeDeleted == null)
+			{
+				return Json(new { success = false, message = "Error while deleting" });
+			}
+
+			var oldImagePath =
+						   Path.Combine(_webHostEnvironment.WebRootPath,
+						   productToBeDeleted.ImgUrl.TrimStart('\\'));
+
+			if (System.IO.File.Exists(oldImagePath))
+			{
+				System.IO.File.Delete(oldImagePath);
+			}
+
+			_unitOfWork.Product.Delete(productToBeDeleted);
+			_unitOfWork.Save();
+
+			return Json(new { success = true, message = "Delete Successful" });
+		}
+
 	}
+	#endregion
+
 }
