@@ -26,16 +26,8 @@ namespace BulkyWeb.Areas.Admin.Controllers
 
 			return View(objproductsList);
 		}
-
-		public IActionResult Upsert(int? id) //Update and Insert 
+		public IActionResult Upsert(int? id)
 		{
-			//Projections in EF Core
-			IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
-			{
-				Text = u.Name,
-				Value = u.Id.ToString()
-			});
-
 			//pass data with viewBag
 			//ViewBag.CategoryList = CategoryList;
 
@@ -45,11 +37,14 @@ namespace BulkyWeb.Areas.Admin.Controllers
 			//Using View Model to pass data
 			ProductVM productVM = new()
 			{
-				CategoryList = CategoryList,
+				CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
+				{
+					Text = u.Name,
+					Value = u.Id.ToString()
+				}),
 				Product = new Product()
 			};
-
-			if(id ==  null ||  id == 0)
+			if (id == null || id == 0)
 			{
 				//create
 				return View(productVM);
@@ -57,15 +52,15 @@ namespace BulkyWeb.Areas.Admin.Controllers
 			else
 			{
 				//update
-				productVM.Product = _unitOfWork.Product.Get(u=>u.Id == id);
+				productVM.Product = _unitOfWork.Product.Get(u => u.Id == id);
 				return View(productVM);
 			}
 
-			
 		}
 
+
 		[HttpPost]
-		public IActionResult Upsert(ProductVM productVM, IFormFile? file) 
+		public IActionResult Upsert(ProductVM productVM, IFormFile? file)
 		{
 			if (ModelState.IsValid)
 			{
@@ -77,11 +72,13 @@ namespace BulkyWeb.Areas.Admin.Controllers
 
 					if (!string.IsNullOrEmpty(productVM.Product.ImgUrl))
 					{
-						//delete old img
-						var oldImagePath = Path.Combine(wwwRootPath, productVM.Product.ImgUrl.TrimStart('\\'));
+						//delete the old image
+						var oldImagePath =
+							Path.Combine(wwwRootPath, productVM.Product.ImgUrl.TrimStart('\\'));
+
 						if (System.IO.File.Exists(oldImagePath))
 						{
-							System.IO.File.Delete(oldImagePath); 
+							System.IO.File.Delete(oldImagePath);
 						}
 					}
 
@@ -91,11 +88,9 @@ namespace BulkyWeb.Areas.Admin.Controllers
 					}
 
 					productVM.Product.ImgUrl = @"\images\product\" + fileName;
-					
 				}
-
 				//IF ID DONT EXIST CREATE
-				if(productVM.Product.Id == 0) 
+				if (productVM.Product.Id == 0)
 				{
 					_unitOfWork.Product.Add(productVM.Product);
 				}
@@ -104,9 +99,9 @@ namespace BulkyWeb.Areas.Admin.Controllers
 				{
 					_unitOfWork.Product.Update(productVM.Product);
 				}
+
 				_unitOfWork.Save();
 				TempData["success"] = "Product created successfully";
-
 				return RedirectToAction("Index");
 			}
 			else
@@ -119,7 +114,6 @@ namespace BulkyWeb.Areas.Admin.Controllers
 				});
 				return View(productVM);
 			}
-			
 		}
 	
 
