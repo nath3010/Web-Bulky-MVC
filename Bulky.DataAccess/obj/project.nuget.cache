@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9+NT8DKbq9OBxDLZnpYfngIeQNlCGb1VRjSQdBjhTSRCUxn3DK57XbzWdLzAYj/7b5K+GKP9kAayT5xDmu2BQw==",
+  "dgSpecHash": "a8n95MCPoYvh6XmwpM5XcGACPundMzuq1zPh+2zAh5SdydwJO7YRh05/O+DWZICYEA4y/lv6CiuocXD1gfFZtA==",
   "success": true,
   "projectFilePath": "C:\\Users\\natha\\OneDrive\\Documentos\\AprendendoAspNet\\Web-Bulky-MVC\\Bulky.DataAccess\\Bulky.DataAccess.csproj",
   "expectedPackageFiles": [
@@ -25,6 +25,7 @@
     "C:\\Users\\natha\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.2.0\\microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512",
     "C:\\Users\\natha\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\natha\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\7.0.5\\microsoft.aspnetcore.identity.entityframeworkcore.7.0.5.nupkg.sha512",
+    "C:\\Users\\natha\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.5\\microsoft.aspnetcore.identity.ui.7.0.5.nupkg.sha512",
     "C:\\Users\\natha\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\2.2.0\\microsoft.aspnetcore.jsonpatch.2.2.0.nupkg.sha512",
     "C:\\Users\\natha\\.nuget\\packages\\microsoft.aspnetcore.mvc.abstractions\\2.2.0\\microsoft.aspnetcore.mvc.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\natha\\.nuget\\packages\\microsoft.aspnetcore.mvc.core\\2.2.0\\microsoft.aspnetcore.mvc.core.2.2.0.nupkg.sha512",
@@ -52,7 +53,8 @@
     "C:\\Users\\natha\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\natha\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\natha\\.nuget\\packages\\microsoft.extensions.dependencymodel\\7.0.0\\microsoft.extensions.dependencymodel.7.0.0.nupkg.sha512",
-    "C:\\Users\\natha\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\2.2.0\\microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\natha\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\7.0.0\\microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\natha\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\7.0.5\\microsoft.extensions.fileproviders.embedded.7.0.5.nupkg.sha512",
     "C:\\Users\\natha\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\2.2.0\\microsoft.extensions.hosting.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\natha\\.nuget\\packages\\microsoft.extensions.identity.core\\7.0.5\\microsoft.extensions.identity.core.7.0.5.nupkg.sha512",
     "C:\\Users\\natha\\.nuget\\packages\\microsoft.extensions.identity.stores\\7.0.5\\microsoft.extensions.identity.stores.7.0.5.nupkg.sha512",
